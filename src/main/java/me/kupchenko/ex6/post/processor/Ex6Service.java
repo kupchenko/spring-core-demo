@@ -10,7 +10,7 @@ import javax.annotation.PreDestroy;
 @Service
 @Getter
 public class Ex6Service implements InitializingBean {
-    @InjectRandomInit(min = 3, max = 21)
+    @InjectRandomInt(min = 3, max = 21)
     private int randomNumber;
 
     public Ex6Service() {

@@ -18,7 +18,7 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
                 .filter(this::isAnnotationInjectRandomIntPresent)
                 .forEach(field -> {
                     field.setAccessible(true);
-                    InjectRandomInit annotation = field.getAnnotation(InjectRandomInit.class);
+                    InjectRandomInt annotation = field.getAnnotation(InjectRandomInt.class);
                     int min = annotation.min();
                     int max = annotation.max();
                     Random random = new Random();
@@ -29,7 +29,7 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
     }
 
     private boolean isAnnotationInjectRandomIntPresent(Field field) {
-        return field.isAnnotationPresent(InjectRandomInit.class);
+        return field.isAnnotationPresent(InjectRandomInt.class);
     }
 
     @Override
