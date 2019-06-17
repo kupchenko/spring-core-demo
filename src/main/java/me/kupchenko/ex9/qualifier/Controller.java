@@ -1,6 +1,5 @@
 package me.kupchenko.ex9.qualifier;
 
-import lombok.AllArgsConstructor;
 import me.kupchenko.ex9.qualifier.service.Ex9Service;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

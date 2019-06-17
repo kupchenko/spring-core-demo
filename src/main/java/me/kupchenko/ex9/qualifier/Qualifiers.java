@@ -8,6 +8,8 @@ public class Qualifiers {
         ApplicationContext context = new AnnotationConfigApplicationContext("me.kupchenko.ex9");
         Controller bean = context.getBean(Controller.class);
         bean.doSmth();
+        SecondController secondController = context.getBean(SecondController.class);
+        secondController.doSmth();
 
     }
 }
