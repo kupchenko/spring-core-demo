@@ -27,7 +27,7 @@ public class AppListener implements ApplicationListener<ContextRefreshedEvent> {
                 .flatMap(Stream::of)
                 .filter(this::isAnnotationPostProxyPresent)
                 .forEach(method -> {
-                    Class<?> declaringClass = method.getDeclaringClass();
+                    Class<?> declaringClass = method.getDeclaringClass(); //Find out how to get original class name
                     Object bean = applicationContext.getBean(declaringClass);
                     try {
                         Method currentMethod = bean.getClass().getMethod(method.getName(), method.getParameterTypes());
