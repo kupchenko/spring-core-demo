@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Ex3AnotherService {
     public void printSomething() {
-        System.out.println("Opt B: Some logic!!");
+        System.out.println("Some logic!!");
     }
 }

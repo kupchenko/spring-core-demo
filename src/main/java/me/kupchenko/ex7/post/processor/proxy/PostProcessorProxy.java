@@ -20,8 +20,3 @@ public class PostProcessorProxy {
         }
     }
 }
-
-
-//Proxy: Spring AOP(Aspects) работает через прокси:
-//        ●	Dynamic PROXY - через интерфейсы
-//        ●	CGLib - наследование от проксируемого класса
